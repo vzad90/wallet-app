@@ -1,0 +1,87 @@
+{
+  "transactions": [
+    {
+      "id": "t1",
+      "type": "Credit",
+      "amount": 14.06,
+      "name": "Apple",
+      "description": "Card Number Used — Diana",
+      "date": "2025-10-22T15:30:00.000Z",
+      "pending": true,
+      "authorizedUser": "Diana"
+    },
+    {
+      "id": "t2",
+      "type": "Payment",
+      "amount": 174.0,
+      "name": "Payment",
+      "description": "From JPMorgan Chase Bank National",
+      "date": "2025-10-21T10:00:00.000Z"
+    },
+    {
+      "id": "t3",
+      "type": "Credit",
+      "amount": 3.24,
+      "name": "Apple",
+      "description": "Card Number Used",
+      "date": "2025-10-21T18:12:00.000Z",
+      "authorizedUser": "Diana"
+    },
+    {
+      "id": "t4",
+      "type": "Payment",
+      "amount": 99.71,
+      "name": "Payment",
+      "description": "From JPMorgan Chase Bank National",
+      "date": "2025-10-18T09:00:00.000Z"
+    },
+    {
+      "id": "t5",
+      "type": "Payment",
+      "amount": 73.58,
+      "name": "Payment",
+      "description": "From JPMorgan Chase Bank National",
+      "date": "2025-10-17T12:45:00.000Z"
+    },
+    {
+      "id": "t6",
+      "type": "Credit",
+      "amount": 21.61,
+      "name": "IKEA",
+      "description": "Round Rock, TX",
+      "date": "2025-10-16T14:22:00.000Z"
+    },
+    {
+      "id": "t7",
+      "type": "Credit",
+      "amount": 73.58,
+      "name": "Target",
+      "description": "Cedar Park, TX",
+      "date": "2025-10-15T16:35:00.000Z"
+    },
+    {
+      "id": "t8",
+      "type": "Credit",
+      "amount": 7.5,
+      "name": "Airalo",
+      "description": "eSIM recharge",
+      "date": "2025-10-12T12:47:00.000Z"
+    },
+    {
+      "id": "t9",
+      "type": "Credit",
+      "amount": 12.99,
+      "name": "Spotify",
+      "description": "Monthly subscription",
+      "date": "2025-10-10T08:15:00.000Z"
+    },
+    {
+      "id": "t10",
+      "type": "Payment",
+      "amount": 250,
+      "name": "Payment",
+      "description": "From Employer Payroll",
+      "date": "2025-10-05T09:00:00.000Z"
+    }
+  ]
+}

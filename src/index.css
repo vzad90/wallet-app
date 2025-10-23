@@ -1,0 +1,24 @@
+:root {
+  color-scheme: light;
+  color: #0f172a;
+  background: #ffffff;
+  font-family: -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial,
+    sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+a {
+  color: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
