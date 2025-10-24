@@ -1,7 +1,6 @@
 :root {
   color-scheme: light;
   color: #0f172a;
-  background: #ffffff;
   font-family: -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial,
     sans-serif;
 }
@@ -11,6 +10,8 @@
 }
 body {
   margin: 0;
+  background-color: #f0f8ff;
+  height: 100vh;
 }
 a {
   color: inherit;

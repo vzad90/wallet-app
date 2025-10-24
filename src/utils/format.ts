@@ -15,7 +15,11 @@ export function formatDayOrDate(iso: string): string {
   if (days <= 6) {
     return date.toLocaleDateString("en-US", { weekday: "long" });
   }
-  return date.toLocaleDateString("en-US", { month: "short", day: "numeric" });
+  return date.toLocaleDateString("en-US", {
+    month: "numeric",
+    day: "numeric",
+    year: "2-digit",
+  });
 }
 
 export function kFormat(num: number): string {

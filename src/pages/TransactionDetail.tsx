@@ -19,23 +19,25 @@ export default function TransactionDetail() {
       </header>
       <div className="tx-detail">
         <div className="tx-detail-amount">{total}</div>
-        <div className="tx-detail-name">{tx.name}</div>
-        <div className="tx-detail-date">
-          {new Date(tx.date).toLocaleString()}
+        <div className="tx-detail-row">
+          <div className="tx-detail-text">{tx.name}</div>
+          <div className="tx-detail-text">
+            {new Date(tx.date).toLocaleString("en-US", {
+              month: "numeric",
+              day: "numeric",
+              year: "2-digit",
+              hour: "2-digit",
+              minute: "2-digit",
+              hour12: false,
+            })}
+          </div>
         </div>
-
         <div className="card detail-card">
-          <div className="row">
-            <div className="label">Status</div>
-            <div className="value">{tx.pending ? "Pending" : "Approved"}</div>
-          </div>
-          <div className="row">
-            <div className="label">Method</div>
-            <div className="value">RBC Bank Debit Card</div>
-          </div>
+          <p className="label">Status: {tx.pending ? "Pending" : "Approved"}</p>
+          <p className="value">RBC Bank Debit Card</p>
           <div className="row total">
-            <div className="label">Total</div>
-            <div className="value">{total}</div>
+            <p className="label">Total</p>
+            <p className="label">{total}</p>
           </div>
         </div>
       </div>

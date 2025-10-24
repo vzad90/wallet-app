@@ -1,4 +1,3 @@
-/* Mobile-first wallet styles */
 #root {
   max-width: 480px;
   margin: 0 auto;
@@ -20,20 +19,32 @@
   text-decoration: none;
   font-size: 20px;
 }
-
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 8px;
 }
 .card {
-  background: #f4f4f5;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #ffff;
   border-radius: 12px;
   padding: 12px;
 }
+.cards-row {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 8px;
+}
+.cards-row .card {
+  display: flex;
+  justify-content: center;
+}
 .card-title {
   font-size: 12px;
-  color: #555;
+  font-weight: 600;
 }
 .card-balance {
   font-size: 22px;
@@ -44,24 +55,48 @@
   font-size: 12px;
 }
 .card-points {
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 700;
+  color: #666;
 }
-
+.card-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+  background: rgb(225, 225, 225);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #fff;
+}
+.card-circle i {
+  color: #292929;
+  font-size: 20px;
+}
 .section-title {
   margin: 16px 0 8px;
   font-size: 16px;
 }
 .tx-list {
+  background: #ffff;
+  border-radius: 12px;
+  padding: 0 12px;
   list-style: none;
-  padding: 0;
   margin: 0;
 }
 .tx-item {
   border-bottom: 1px solid #eee;
 }
+.tx-item:last-child {
+  border-bottom: none;
+}
+.tx-item:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
 .tx-link {
   display: flex;
+  align-items: center;
   gap: 12px;
   text-decoration: none;
   color: inherit;
@@ -82,9 +117,17 @@
 .tx-main {
   flex: 1;
 }
+.tx-amount-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
 .tx-row {
   display: flex;
   justify-content: space-between;
+}
+.arrow {
+  color: #6b7280;
 }
 .tx-name {
   font-weight: 600;
@@ -104,6 +147,26 @@
   margin-top: 2px;
 }
 
+.tx-sub-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #6b7280;
+  font-size: 12px;
+}
+.tx-sub-row + .tx-sub {
+  margin-top: 2px;
+}
+.badge {
+  background: #e5e7eb;
+  color: #6b7280;
+  font-size: 10px;
+  line-height: 1;
+  padding: 2px 6px;
+  border-radius: 8px;
+  margin-top: 5px;
+}
+
 .tx-detail {
   text-align: center;
   padding-top: 24px;
@@ -112,23 +175,32 @@
   font-size: 40px;
   font-weight: 800;
 }
-.tx-detail-name {
-  color: #555;
-  margin-top: 4px;
-}
-.tx-detail-date {
+.tx-detail-text {
   color: #6b7280;
+  margin-top: 4px;
   font-size: 12px;
 }
 .detail-card {
   margin-top: 16px;
+  background-color: #ffff;
 }
-.detail-card .row {
+.label {
+  text-align: left;
+  font-weight: 600;
+}
+.value {
+  color: #6b7280;
+  text-align: left;
+  margin-top: 8px;
+}
+.tx-detail-row {
   display: flex;
-  justify-content: space-between;
-  padding: 8px 0;
+  flex-direction: column;
+  gap: 4px;
 }
 .detail-card .row.total {
+  display: flex;
+  justify-content: space-between;
   border-top: 1px solid #e5e7eb;
   margin-top: 8px;
   padding-top: 12px;
